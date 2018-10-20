@@ -11,9 +11,10 @@ def Character(name=None):
     
     return render_template('character.html' , name=name)
 
-@app.route('/item')
-def item () :
-   return render_template('item.html')
+@app.route('/item/')
+@app.route('/item/<name>')
+def item (name=None) :
+   return render_template('item.html' , name=name)
 
 @app.route('/location')
 def location () :
