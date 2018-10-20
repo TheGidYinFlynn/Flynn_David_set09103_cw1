@@ -6,8 +6,10 @@ def Home():
 	return render_template('home.html')
 
 @app.route('/character/')
-def Character():
-    return render_template('character.html')
+@app.route('/character/<name>')
+def Character(name=None):
+    
+    return render_template('character.html' , name=name)
 
 @app.route('/item')
 def item () :
@@ -18,7 +20,7 @@ def location () :
    return render_template('location.html')
 
 @app.route('/about')
-def about () : 
+def about () :
    return render_template('about.html')
 
 

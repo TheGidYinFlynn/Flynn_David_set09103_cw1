@@ -61,5 +61,64 @@
 	    <li><a href="/location">Location</a></li>
 	    <li style="float:right"><a href="/about">About</a></li>
 	</ul>
+
+	
+	{%  if name == "cloud" %}
+
+	
+	<h1> Cloud Strife </h1>
+	
+
+	<p> Cloud is the main Playable character.</p>
+
+	<p> he is a swordsman. and a former member of SOLDIER a elite unit in the shinra army </p>
+
+	<p> He recently joined the resistance group AVALANCHE to fight against shinra </p>
+
+	<h2> Weapon </h2>
+
+	<p> he uses a buster sword as his primary weapon </p>
+	
+	<p> because he was a member of SOLDIER he has access to magic and advanced combat techniques </p>
+
+	
+	{% elif name == "barret" %}
+
+	<h1> Barret Wallace </h1>
+
+
+	<p> Barret is a party member and leader of the eco terrorist group AVALANCHE.</p>
+
+	<p> he has a daughter, Marlene whom he cares for the best he can while attempting to improve the world through the activities of AVALANCHE </p>
+
+	<h2> Weapon </h2>
+	
+	<p> he fights with a gun mounted on his arm that he had grafted on to his arm after he lost the use of his hand </p>
+	
+	{% elif name == "yuffie" %}
+	<h1> Yuffie Kisaragi </h1>
+
+	<p> Yuffie is a optional party member that can be gained through a random encounter in any of the forest areas in the game.</p>
+	
+	<p> she is a ninja from the vilage of Wutai and plays a large part in the wutai sidequest </p>
+
+	<h2> Weapon </h2>
+
+	<p> As yuffie is a ninja her main weapon is a shiruken she is one of the 2 long range only party members in the game </p>
+
+	{% else %}
+
+	<h1> Character list </h1>
+	<p> Please choose the character you would like to see from the list bellow </p>	
+
+	<a href="cloud">Cloud</a>
+	<p> </p>
+        <a href="barret">Barret</a>
+	<p> </p>
+        <a href="yuffie">Yuffie</a>
+
+	{% endif %}
+
+	</body>
 </html>
 
